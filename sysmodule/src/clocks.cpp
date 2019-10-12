@@ -276,7 +276,7 @@ std::uint32_t Clocks::GetNearestHz(SysClkModule module, SysClkProfile profile, s
 
 std::uint32_t Clocks::GetMaxAllowedHz(SysClkModule module, SysClkProfile profile)
 {
-    if(module == SysClkModule_GPU)
+    /*if(module == SysClkModule_GPU)
     {
         if(profile < SysClkProfile_HandheldCharging)
         {
@@ -286,7 +286,7 @@ std::uint32_t Clocks::GetMaxAllowedHz(SysClkModule module, SysClkProfile profile
         {
             return SYSCLK_GPU_UNOFFICIAL_CHARGER_MAX_HZ;
         }
-    }
+    }*/
 
     return 0;
 }
